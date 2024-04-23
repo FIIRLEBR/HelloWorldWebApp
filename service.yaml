@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hallo-world-service
+spec:
+  selector:
+    app: hallo-world
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
